@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập chuổĩ</title>
+</head>
+<body>
+
+    <style>
+        input{
+            padding: 20px 600px;
+            width: 400px;
+            font-size: 50px;
+            text-align: center;
+        }
+        #result{
+            margin-top: 30px;
+            color: brown;
+            font-size: 18px;
+        }
+        h1{
+            color: blue;
+        }
+        .center{
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+    <div class="center">
+
+        <h1>Nhập ở dưới</h1>
+        <input type="text" id="username" placeholder="Nhập dữ liệu ......" style="color: darkmagenta;"
+        onkeyup="checkForm()">
+        <div id="result" style="font-size: 100px; text-align: center;"></div>
+    </div>
+    <script>
+        function checkForm(){
+            const username = document.getElementById('username').value;
+            document.getElementById('result').innerText = username;
+            //console.log(username);
+        }
+    </script>
+</body>
+</html>
